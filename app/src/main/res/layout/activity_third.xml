@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    android:scrollbars="vertical"
+    tools:context=".Third_Activity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@string/tiket"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/baseline_train_24"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="@drawable/rounded"
+            android:textColor="@color/blue"
+            android:text="@string/pergipulang"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="@drawable/rounded2"
+            android:textColor="@color/white"
+            android:text="@string/multikota"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:orientation="vertical"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseline_train_blue"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/dari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dari"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14dp"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseline_transfer_within_a_station_24"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dari_stasiun"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="14dp"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/spin_stasiun_asal"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded4"
+            android:layout_marginBottom="7dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseline_train_blue"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/ke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ke"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14dp"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseline_transfer_within_a_station_24"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dari_stasiun"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="14dp"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spin_stasiun_tujuan"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded4"
+            android:layout_marginBottom="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseline_transfer_within_a_station_24"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/tgl_berangkat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tgl_berangkat"
+                android:fontFamily="@font/poppinssemibold"
+                android:textSize="14dp"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+        <DatePicker
+            android:id="@+id/datePicker_tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/penumpang"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Kelas Kereta"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/spin_penumpang"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded4"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"/>
+            <Spinner
+                android:id="@+id/spin_category"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded4"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Makan Siang"/>
+                    <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Makan Siang"
+                        android:background="@drawable/rounded3"
+                        android:textColor="@color/white"
+                        android:id="@+id/toggleMakanSiang" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Makan Pagi"/>
+                    <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Makan Pagi"
+                        android:background="@drawable/rounded3"
+                        android:textColor="@color/white"
+                        android:id="@+id/toggleMakanPagi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Makan Malam"/>
+                    <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Makan Malam"
+                        android:background="@drawable/rounded3"
+                        android:textColor="@color/white"
+                        android:id="@+id/toggleMakanMalam" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pinggir Jendela"/>
+                    <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Pinggir Jendela"
+                        android:background="@drawable/rounded3"
+                        android:textColor="@color/white"
+                        android:id="@+id/togglePinggirJendela" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paling Depan"/>
+                    <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Paling Depan"
+                        android:background="@drawable/rounded3"
+                        android:textColor="@color/white"
+                        android:id="@+id/togglePalingDepan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paling Belakang"/>
+                    <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Paling Belakang"
+                        android:background="@drawable/rounded3"
+                        android:textColor="@color/white"
+                        android:id="@+id/togglePalingBelakang" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duduk Tengah"/>
+                    <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Duduk Tengah"
+                        android:background="@drawable/rounded3"
+                        android:textColor="@color/white"
+                        android:id="@+id/toggleDudukTengah" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv_harga"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Harga: Rp. 0"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/pesanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/pesan"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:backgroundTint="@color/orange"/>
+    </LinearLayout>
+
+</LinearLayout>
